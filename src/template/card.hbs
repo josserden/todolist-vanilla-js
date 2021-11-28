@@ -2,13 +2,33 @@
 
   <div class='col'>
     <div class='card-header'>
-      {{id}}
-    </div>
-    <div class='shadow-sm rounded p-3'>
-      <div class='p-2'>
-        <p class='h6 m-0'>{{title}}</p>
+      <div class='d-flex justify-content-between align-items-center'>
+        {{id}}
+        <div class='form-check p-0 m-0' data-complete={{completed}}>
+          <label class='form-check-label' for='defaultCheck1'>
+            {{#if completed}}
+              <input class='form-check-input' type='checkbox' value='' id='defaultCheck1' checked />
+            {{else}}
+              <input class='form-check-input' type='checkbox' value='' id='defaultCheck1' />
+            {{/if}}
+          </label>
+        </div>
+
       </div>
     </div>
+    {{#if completed}}
+      <div class='shadow-sm rounded p-3 bg-light border border-light'>
+        <div class='p-2'>
+          <p class='h6 m-0 text-primary'>{{title}}</p>
+        </div>
+      </div>
+    {{else}}
+      <div class='shadow-sm rounded p-3'>
+        <div class='p-2'>
+          <p class='h6 m-0'>{{title}}</p>
+        </div>
+      </div>
+    {{/if}}
   </div>
 
 {{/each}}

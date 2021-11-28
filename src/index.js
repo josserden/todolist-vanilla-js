@@ -11,5 +11,3 @@ ApiService.getAllTodo().then(({ data }) => {
   const options = { element: refs.todoList, template: card, data: data };
   renderMarkup(options);
 });
-
-console.log(refs.todoList);
