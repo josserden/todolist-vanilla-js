@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;;;;AAEA,aAFA,QAAA,wCACA,QAAA,8CACA,QAAA","file":"src.e21ea5e0.js","sourceRoot":"../src","sourcesContent":["import 'bootstrap/dist/css/bootstrap.min.css';\nimport 'material-icons/iconfont/material-icons.css';\nimport './sass/main.scss';\n"]}
